@@ -5,7 +5,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/sharibverse/HTML-Form-Jenkins.git'
+                git branch: 'main',
+                    url: 'https://github.com/sharibverse/HTML-Form-Jenkins.git'
             }
         }
 
